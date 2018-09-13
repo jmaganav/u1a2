@@ -9,6 +9,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        TextView tv = findViewById(R.id.tv);
+        tv.setText(R.string.cuenta);
 
         //Actividad 1 Introduccion a TextView.
         //https://developer.android.com/reference/android/widget/TextView
@@ -16,17 +19,12 @@ public class MainActivity extends AppCompatActivity {
 
         // El archivo del layout de la actividad se encuentra en la carpeta
         // res/layout/activity_main.xml
-        setContentView(R.layout.activity_main);
-
 
         //Para hacer referencia a un componente del layout, utilizamos el metodo findViewById
         //y le pasamos como parametro el id correspondiente.
         //Para hacer referencia al Textview con id tv
-        TextView tv = findViewById(R.id.tv);
-
 
         //Para cambiar el texto de tv
-        tv.setText("Hola mundo");
 
         //Actividades
         //a) Modifica el texto "Hola mundo", pon tu nombre y ejecuta la aplicacion
